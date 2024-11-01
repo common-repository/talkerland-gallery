@@ -1,0 +1,143 @@
+/***************************************/
+/*-- Talkerland Gallery Base Presets --*/
+/***************************************/
+
+
+#gallery-image-container {
+   width:100%;
+   text-align: center;
+}
+
+#gallery-image-container:before,
+#gallery-image-container:after,
+.lightbox-image-container:before,
+.lightbox-image-container:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/*-- setting border box on all elements inside the grid --*/
+.gallery-image-container *,
+.lightbox-image-container * {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.gallery-image-container *:before,
+.gallery-image-container *:after,
+.lightbox-image-container *:before,
+.lightbox-image-container *:after {
+   -webkit-box-sizing: inherit;
+   -moz-box-sizing: inherit;
+   -ms-box-sizing: inherit;
+   box-sizing: inherit;
+}
+
+
+.gallery-image-frames {
+   width:150px;
+   float: left;
+   min-height: 1px;
+   margin-bottom: 1rem;
+   margin-right: 1rem;
+}
+
+.gallery-image-frames-placeholder {
+   width:148px;
+   height: 148px;
+   border: 1px dotted #4F800D;
+   background-color: #eeedc3;
+}
+
+.notice-warning {
+   color: #9e2020;
+}
+
+.shortcode-display-style {
+   text-align:center;
+   background-color:#333333;
+   color:#00ff00;
+   line-height:3rem;
+}
+
+.wp-picker-open + .wp-picker-input-wrap,
+.wp-color-result {
+   vertical-align: inherit;
+}
+
+.talkerland-gallery-lightbox-option-container > div > label,
+.talkerland-gallery-option-container > div > label {
+   font-size: larger;
+   font-weight: 700;
+   font-variant-caps: all-petite-caps;
+}
+
+.talkerland-gallery-lightbox-option-container > div > p, h4.notice-warning,
+.talkerland-gallery-option-container > div > p, h4.notice-warning {
+   padding-bottom: 1rem;
+}
+
+/*--- Resets existing settings: ---*/
+/*--- Some theme settings affects the gallery appearance. ---*/
+/*--- This will reset those affecting css properties. ---*/
+.lightbox-image-frame,
+.lightbox-image-frame a,
+.lightbox-image-frame a:hover,
+.lightbox-image-frame a:active,
+.lightbox-image-frame a:focus,
+.lightbox-image-frame img,
+.next,
+.next a,
+.next a:hover,
+.next a:active,
+.next a:focus,
+.prev,
+.prev a,
+.prev a:hover,
+.prev a:active,
+.prev a:focus {
+   border-collapse: collapse;
+   -webkit-box-shadow: none !important;
+   box-shadow: none !important;
+}
+
+/*--- Resets existing settings: ---*/
+/*--- Some theme settings affects the gallery appearance. ---*/
+/*--- This will reset those affecting css properties. ---*/
+.lightbox-image-frame,
+.lightbox-image-frame a,
+.lightbox-image-frame a:hover,
+.lightbox-image-frame a:active,
+.lightbox-image-frame a:focus,
+.lightbox-image-frame img {
+   line-height: 0;
+}
+
+
+/*******************************/
+/*-- Front Lightbox Settings --*/
+/*******************************/
+
+/*--- Lightbox alignment can be adjusted here. ---*/
+.lightbox-image-container {
+   width:100%;
+   text-align: center; /*-- Lightbox alignment setting: left / center / right --*/
+}
+
+/*--- Lightbox image frame size can be set here. --*/
+.lightbox-image-frame {
+   width:100px; /*-- Lightbox frame size  --*/
+   float: left;
+   min-height: 1px;
+   margin: 0; /*-- Setting for distance between two frames  --*/
+   overflow: hidden;
+}
+
+/*-- Lightbox container size. You can set the number of lightbox images in a row --*/
+.lightbox-image-inner-container {
+   display: inline-block;
+   width: 600px; /*-- Lightbox frame size (100px) * number of images (5) = 500px  --*/
+}
